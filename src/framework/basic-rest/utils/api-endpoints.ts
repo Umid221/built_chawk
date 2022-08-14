@@ -1,0 +1,46 @@
+
+const storeId = process.env.NEXT_PUBLIC_STORE_ID
+
+
+export const API_ENDPOINTS = {
+  LOGIN: "/login",
+  REGISTER: "/register",
+  LOGOUT: "/logout",
+  FORGET_PASSWORD: "/forget-password",
+  FEATURED_CATEGORIES: "/featured_categories.json",
+  COLLECTIONS: "/collections.json",
+  BRANDS: "/brands.json",
+  PRODUCTS: "/products.json",
+  FEATURED_PRODUCTS: "/featured_products.json",
+  TOP_SELLER_PRODUCTS: "/products_top_seller.json",
+  BEST_SELLER_PRODUCTS: "/products_best_seller.json",
+  NEW_ARRIVAL_PRODUCTS: "/products_new_arrival.json",
+  SHOPS: "/shops.json",
+  SHOP: "/shop.json",
+  ORDERS: "/orders.json",
+  ORDER: "/order.json",
+  ON_SELLING_PRODUCTS: "/products_on_selling.json",
+  
+  SEARCH: "/v1/product/search?storeId="+storeId+"",
+  PROMOTION_BANNERS: "/v1/store/bg/"+storeId,
+  STORE_LOGO: "/v1/store/logo/"+storeId,
+  STORE_TIMING: "/v1/store/timing/"+storeId,
+  CATEGORIES: "/v1/category/"+storeId,
+  PINNED_BOX: "/v1/pinned_box/"+storeId,
+  CATEGORY_PRODUCTS: "/v1/product/by_category_id/",
+  PRODUCT: "/v1/product/",
+  FLASH_SALE_PRODUCTS: "/v1/promotion/today?storeId="+storeId,
+  SOCIAL: '/v1/store/getNetworkList/'+storeId,
+  CONTACT: '/v1/store/getStoreSupport/'+storeId,
+  RELATED_PRODUCTS: "/v1/product/by_category_ids/",
+  COUNTRIES:'/v1/country/get_all/'+storeId,
+  PICKUP:'/v1/store/branch-timing/'+storeId,
+  CITY:'/v1/country/city/get/',
+  AREA:'/v1/country/city/area/get_all',
+  POST_ORDER:`/v1/order/make-order/`+storeId,
+  ORDER_STATUS:`/v1/order/check-status`,
+  GET_ORDER:`/v1/order/getOrder/`,
+  GET_PROMO_BY_ID:`/v1/promotion/promo`,
+  GET_STORE_VIEW:`/v1/store/storeView/`+storeId,
+  DELIVERY_OPTION:`v1/store/getDeliveryOptions/`+storeId
+};

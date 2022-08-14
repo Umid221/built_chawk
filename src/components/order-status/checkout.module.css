@@ -1,0 +1,22 @@
+.countries_wrapper{
+    
+}
+
+.hidden{
+    overflow: hidden;
+    height: 0;
+}
+.countryArrowSvg{
+    transform: rotate(180deg);
+
+}
+
+.transition{
+    transition: 0.3s ease;
+}
+.zIndex{
+    z-index: 21;
+}
+.modal{
+    max-height: fit-content;
+}
