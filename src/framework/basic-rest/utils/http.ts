@@ -2,7 +2,7 @@ import axios from "axios";
 import { getToken } from "./get-token";
 
 const http = axios.create({
-  baseURL: "http://3.17.204.180/api",
+  baseURL: "https://3.17.204.180:8443/api",
   timeout: 30000,
   headers: {
     Accept: "application/json",
